@@ -10,9 +10,26 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * The type Get dummy data.
+ */
 @Component
 @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class GetDummyData {
+
+
+    /**
+     * Instantiates a new Get dummy data.
+     */
+    public GetDummyData() {
+    }
+
+    /**
+     * Gets dummy users.
+     *
+     * @return the users
+     */
     public List<User> getUsers() {
         ArrayList<User> usersList = new ArrayList<>();
         for (int i = 1; i < 5; i++) {

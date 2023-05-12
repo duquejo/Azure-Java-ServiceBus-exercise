@@ -14,6 +14,10 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
 import org.springframework.jms.connection.CachingConnectionFactory;
 
+
+/**
+ * The type Jms config.
+ */
 @Configuration
 public class JmsConfig {
 
@@ -31,14 +35,35 @@ public class JmsConfig {
 
     private static final String AMQP_URI_FORMAT = "amqps://%s?amqp.idleTimeout=%d";
 
+    /**
+     * Instantiates a new Jms config.
+     */
+    public JmsConfig() {
+    }
+
+    /**
+     * Gets topic name.
+     *
+     * @return the topic name
+     */
     public String getTopicName() {
         return clientId;
     }
 
+    /**
+     * Gets subscription name.
+     *
+     * @return the subscription name
+     */
     public String getSubscriptionName() {
         return subscriptionName;
     }
 
+    /**
+     * Connection factory.
+     *
+     * @return the connection factory
+     */
     @Bean
     public ConnectionFactory connectionFactory() {
 
@@ -58,6 +83,12 @@ public class JmsConfig {
         return new CachingConnectionFactory(jmsConnectionFactory);
     }
 
+    /**
+     * Topic jms listener container factory.
+     *
+     * @param connectionFactory the connection factory
+     * @return the jms listener container factory
+     */
     @Bean
     public JmsListenerContainerFactory<?> topicJmsListenerContainerFactory(
             ConnectionFactory connectionFactory) {
