@@ -1,0 +1,7 @@
+azure:
+  servicebus:
+    connection-string: ""
+    pricing-tier: ""
+    topic-client-id: ""
+    topic-subscription-name: ""
+    idle-timeout: 12345
