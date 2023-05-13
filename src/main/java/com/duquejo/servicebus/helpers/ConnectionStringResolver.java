@@ -5,10 +5,7 @@ import com.duquejo.servicebus.model.ServiceBusKey;
 
 import java.util.HashMap;
 
-
-/**
- * The type Connection string resolver.
- */
+/** The type Connection string resolver. */
 public class ConnectionStringResolver {
 
     private static final String ENDPOINT = "Endpoint";
@@ -16,11 +13,8 @@ public class ConnectionStringResolver {
     private static final String SAS_KEY_NAME = "SharedAccessKeyName";
     private static final String SAS_KEY = "SharedAccessKey";
 
-    /**
-     * Instantiates a new Connection string resolver.
-     */
-    public ConnectionStringResolver() {
-    }
+    /** Instantiates a new Connection string resolver. */
+    public ConnectionStringResolver() {}
 
     /**
      * Gets service bus key.

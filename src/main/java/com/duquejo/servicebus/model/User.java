@@ -1,29 +1,20 @@
 /* (C)2023 */
 package com.duquejo.servicebus.model;
 
-
-/**
- * The type User.
- */
+/** The type User. */
 public class User {
-    /**
-     * ID.
-     */
+    /** ID. */
     public Integer id;
-    /**
-     * Name.
-     */
+    /** Name. */
     public String name;
 
-    /**
-     * Instantiates a new User.
-     */
+    /** Instantiates a new User. */
     public User() {}
 
     /**
      * Instantiates a new User.
      *
-     * @param id   the id
+     * @param id the id
      * @param name the name
      */
     public User(Integer id, String name) {

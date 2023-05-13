@@ -14,10 +14,7 @@ import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
 import org.springframework.jms.connection.CachingConnectionFactory;
 
-
-/**
- * The type Jms config.
- */
+/** The type Jms config. */
 @Configuration
 public class JmsConfig {
 
@@ -35,11 +32,8 @@ public class JmsConfig {
 
     private static final String AMQP_URI_FORMAT = "amqps://%s?amqp.idleTimeout=%d";
 
-    /**
-     * Instantiates a new Jms config.
-     */
-    public JmsConfig() {
-    }
+    /** Instantiates a new Jms config. */
+    public JmsConfig() {}
 
     /**
      * Gets topic name.

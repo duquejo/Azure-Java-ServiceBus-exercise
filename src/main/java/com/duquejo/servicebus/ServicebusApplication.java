@@ -6,18 +6,12 @@ import com.azure.spring.cloud.autoconfigure.implementation.jms.ServiceBusJmsAuto
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-/**
- * The type Servicebus application.
- */
+/** The type Servicebus application. */
 @SpringBootApplication(exclude = ServiceBusJmsAutoConfiguration.class)
 public class ServicebusApplication {
 
-    /**
-     * Instantiates a new Servicebus application.
-     */
-    public ServicebusApplication() {
-    }
+    /** Instantiates a new Servicebus application. */
+    public ServicebusApplication() {}
 
     /**
      * The entry point of application.

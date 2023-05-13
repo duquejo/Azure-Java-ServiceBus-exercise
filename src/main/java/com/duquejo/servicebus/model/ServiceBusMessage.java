@@ -1,34 +1,23 @@
 /* (C)2023 */
 package com.duquejo.servicebus.model;
 
-
-/**
- * The type Service bus message.
- */
+/** The type Service bus message. */
 public class ServiceBusMessage {
-    /**
-     * The Id.
-     */
+    /** The Id. */
     public String id;
-    /**
-     * The Type.
-     */
+    /** The Type. */
     public String type;
-    /**
-     * The Content.
-     */
+    /** The Content. */
     public String content;
 
-    /**
-     * Instantiates a new Service bus message.
-     */
+    /** Instantiates a new Service bus message. */
     public ServiceBusMessage() {}
 
     /**
      * Instantiates a new Service bus message.
      *
-     * @param id      the id
-     * @param type    the type
+     * @param id the id
+     * @param type the type
      * @param content the content
      */
     public ServiceBusMessage(String id, String type, String content) {

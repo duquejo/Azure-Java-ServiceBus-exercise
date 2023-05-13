@@ -1,10 +1,7 @@
 /* (C)2023 */
 package com.duquejo.servicebus.model;
 
-
-/**
- * The type Service bus key.
- */
+/** The type Service bus key. */
 public class ServiceBusKey {
 
     private final String host;
@@ -14,9 +11,9 @@ public class ServiceBusKey {
     /**
      * Instantiates a new Service bus key.
      *
-     * @param host                the host
+     * @param host the host
      * @param sharedAccessKeyName the shared access key name
-     * @param sharedAccessKey     the shared access key
+     * @param sharedAccessKey the shared access key
      */
     public ServiceBusKey(String host, String sharedAccessKeyName, String sharedAccessKey) {
         this.host = host;

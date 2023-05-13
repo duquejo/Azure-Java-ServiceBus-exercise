@@ -16,9 +16,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * The type Send service.
- */
+/** The type Send service. */
 @Service
 public class SendServiceImpl implements SendService {
 
@@ -31,11 +29,8 @@ public class SendServiceImpl implements SendService {
 
     @Autowired private JmsTemplate jmsTemplate;
 
-    /**
-     * Instantiates a new Send service.
-     */
-    public SendServiceImpl() {
-    }
+    /** Instantiates a new Send service. */
+    public SendServiceImpl() {}
 
     @Override
     public String sendMessage() {
